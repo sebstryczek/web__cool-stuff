@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "knex": "knex",
     "start": "cross-env NODE_ENV=production node index.js",
     "start:dev": "cross-env NODE_ENV=development nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +14,10 @@
   "dependencies": {
     "cross-env": "^5.2.0",
     "dotenv": "^6.0.0",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "knex": "^0.15.1",
+    "mysql": "^2.16.0",
+    "objection": "^1.1.10"
   },
   "devDependencies": {
     "nodemon": "^1.18.2"
