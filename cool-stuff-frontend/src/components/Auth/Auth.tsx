@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
-const Auth = () => (
+type Props = {
+  children({ isAuth }: {isAuth: Boolean}): ReactNode,
+};
+
+const Auth = ({ children } : Props) => (
   <>
-    <h1>Auth</h1>
+    {
+      children({
+        isAuth: true,
+      })
+    }
   </>
 );
 
