@@ -12,6 +12,7 @@
         "typeLiterals": "ignore"
       }
     }],
+    "max-line-length": false,
     "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case"],
     "jsx-no-multiline-js": false,
     "jsx-curly-spacing": ["error", {
