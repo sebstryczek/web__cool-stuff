@@ -18,6 +18,7 @@
     "jsx-curly-spacing": ["error", {
       "when": "never",
       "spacing": { "objectLiterals": "never" }
-    }]
+    }],
+    "no-unused-variable": [true, {"ignore-pattern": "^_"}],
   }
 }
