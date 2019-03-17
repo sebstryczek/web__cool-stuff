@@ -1,9 +1,14 @@
-import React from 'react';
+import { createContext } from 'react';
+import AuthService from './AuthService';
 
-const Auth = () => (
-  <>
-    <h1>Auth</h1>
-  </>
-);
+const AuthContextDefaultProps : AuthService = {
+  isAuthenticated: () => false,
+  signIn: () => {},
+  signOut: () => {},
+  signUp: () => {},
+};
 
-export default Auth;
+const AuthContext = createContext<AuthService>(AuthContextDefaultProps);
+
+export const AuthConsumer = AuthContext.Consumer;
+export const AuthProvider = AuthContext.Provider;
