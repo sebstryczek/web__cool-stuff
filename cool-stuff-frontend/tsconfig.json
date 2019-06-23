@@ -19,7 +19,7 @@
     "noEmit": true,
     "jsx": "preserve",
     "noUnusedLocals": false,
-    "noUnusedParameters": false,
+    "noUnusedParameters": false
   },
   "include": [
     "src"
